@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B10001; };
+		A10002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B10002; };
+		A10014 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B10020; };
+		A10003 /* PreviewViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10003; };
+		A10004 /* FloatingMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10004; };
+		A10005 /* imgui.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10005; };
+		A10006 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B10006; };
+		A10007 /* imgui_impl_metal.mm in Sources */ = {isa = PBXBuildFile; fileRef = B10007; };
+		A10008 /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B10008; };
+		A10009 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B10009; };
+		A10010 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10001; };
+		A10011 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10002; };
+		A10012 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10003; };
+		A10013 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10004; };
+		A10015 /* about_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B10022; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B10002 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B10003 /* PreviewViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PreviewViewController.mm; sourceTree = "<group>"; };
+		B10004 /* FloatingMenu.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FloatingMenu.mm; sourceTree = "<group>"; };
+		B10005 /* imgui.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = imgui.mm; sourceTree = "<group>"; };
+		B10006 /* imgui_draw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		B10007 /* imgui_impl_metal.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = imgui_impl_metal.mm; sourceTree = "<group>"; };
+		B10008 /* imgui_tables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_tables.cpp; sourceTree = "<group>"; };
+		B10009 /* imgui_widgets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_widgets.cpp; sourceTree = "<group>"; };
+		B10010 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B10011 /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		B10012 /* FloatingMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingMenu.h; sourceTree = "<group>"; };
+		B10020 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B10021 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B10013 /* imgui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		B10014 /* imgui_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		B10015 /* imgui_impl_metal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgui_impl_metal.h; sourceTree = "<group>"; };
+		B10016 /* imconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		B10017 /* imstb_rectpack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imstb_rectpack.h; sourceTree = "<group>"; };
+		B10018 /* imstb_textedit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imstb_textedit.h; sourceTree = "<group>"; };
+		B10019 /* imstb_truetype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imstb_truetype.h; sourceTree = "<group>"; };
+		C10001 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		C10002 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		C10003 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C10004 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B10022 /* about_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_logo.png; sourceTree = "<group>"; };
+		D10001 /* MenuPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10010 /* Metal.framework in Frameworks */,
+				A10011 /* MetalKit.framework in Frameworks */,
+				A10012 /* UIKit.framework in Frameworks */,
+				A10013 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10015 /* about_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXGroup section */
+		F10001 = {
+			isa = PBXGroup;
+			children = (
+				F10002 /* Sources */,
+				F10003 /* imgui */,
+				F10004 /* Frameworks */,
+				F10005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F10002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B10001 /* main.m */,
+				B10010 /* AppDelegate.h */,
+				B10002 /* AppDelegate.m */,
+				B10011 /* PreviewViewController.h */,
+				B10003 /* PreviewViewController.mm */,
+				B10012 /* FloatingMenu.h */,
+				B10004 /* FloatingMenu.mm */,
+				B10021 /* SceneDelegate.h */,
+				B10020 /* SceneDelegate.m */,
+				B10022 /* about_logo.png */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F10003 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				B10016 /* imconfig.h */,
+				B10013 /* imgui.h */,
+				B10005 /* imgui.mm */,
+				B10006 /* imgui_draw.cpp */,
+				B10015 /* imgui_impl_metal.h */,
+				B10007 /* imgui_impl_metal.mm */,
+				B10014 /* imgui_internal.h */,
+				B10008 /* imgui_tables.cpp */,
+				B10009 /* imgui_widgets.cpp */,
+				B10017 /* imstb_rectpack.h */,
+				B10018 /* imstb_textedit.h */,
+				B10019 /* imstb_truetype.h */,
+			);
+			path = Sources/imgui;
+			sourceTree = "<group>";
+		};
+		F10004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C10001 /* Metal.framework */,
+				C10002 /* MetalKit.framework */,
+				C10003 /* UIKit.framework */,
+				C10004 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F10005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D10001 /* MenuPreview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		G10001 /* MenuPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = H10003 /* Build configuration list for PBXNativeTarget "MenuPreview" */;
+			buildPhases = (
+				E10002 /* Sources */,
+				E10001 /* Frameworks */,
+				E10003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MenuPreview;
+			productName = MenuPreview;
+			productReference = D10001 /* MenuPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		G10002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = H10001 /* Build configuration list for PBXProject "MenuPreview" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F10001;
+			productRefGroup = F10005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				G10001 /* MenuPreview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* main.m in Sources */,
+				A10002 /* AppDelegate.m in Sources */,
+				A10014 /* SceneDelegate.m in Sources */,
+				A10003 /* PreviewViewController.mm in Sources */,
+				A10004 /* FloatingMenu.mm in Sources */,
+				A10005 /* imgui.mm in Sources */,
+				A10006 /* imgui_draw.cpp in Sources */,
+				A10007 /* imgui_impl_metal.mm in Sources */,
+				A10008 /* imgui_tables.cpp in Sources */,
+				A10009 /* imgui_widgets.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		H10004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_ARC = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+			};
+			name = Debug;
+		};
+		H10005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_ARC = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+			};
+			name = Release;
+		};
+		H10006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Sources",
+					"$(SRCROOT)/Sources/imgui",
+				);
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = (
+					"-Wno-deprecated-declarations",
+					"-Wno-unused-variable",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wno-deprecated-declarations",
+					"-Wno-unused-variable",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.preview.MenuPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		H10007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Info.plist;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Sources",
+					"$(SRCROOT)/Sources/imgui",
+				);
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = (
+					"-Wno-deprecated-declarations",
+					"-Wno-unused-variable",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-Wno-deprecated-declarations",
+					"-Wno-unused-variable",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.preview.MenuPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		H10001 /* Build configuration list for PBXProject "MenuPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10004 /* Debug */,
+				H10005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H10003 /* Build configuration list for PBXNativeTarget "MenuPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10006 /* Debug */,
+				H10007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = G10002 /* Project object */;
+}
